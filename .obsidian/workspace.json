@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "8e34ba1e5f7c0da8",
+    "type": "split",
+    "children": [
+      {
+        "id": "aeaee5a68c1aa9a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87fc27dc25c65e04",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab5a2a4bed47fa50",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0784531bf78d13c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0af23b0815c1888",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e526d90fdc4396f1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "59aaa3a7a9045673",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "28f595846e228f1c",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bb1d93cea1feb80",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "05f50bdef66b83a7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6432ea89691538c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bab34d812662701a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2e3e253c77208ef9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "87fc27dc25c65e04",
+  "lastOpenFiles": [
+    "LICENSE",
+    "assets/gifs/ObsidianSyncSH.gif",
+    "assets/gifs/ObsidianSyncSH.gif.sb-eaf9cf54-zUaDLh",
+    "assets/gifs/ObsidianSync.gif.sb-eaf9cf54-z08dgG",
+    "assets/gifs/ObsidianSync.gif",
+    "assets/gifs/ObsidianSync.gif.sb-eaf9cf54-5PW33v",
+    "assets/gifs"
+  ]
+}
