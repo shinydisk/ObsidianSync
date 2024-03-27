@@ -1,4 +1,4 @@
-<img src="./assets/gifs/ObsidianSync.png">
+<img src="assets/gifs/ObsidianSync.png">
 
 >[!info] This repo aims to propose an initialization folder to synchronize its Obsidian vault in GitHub.
 
