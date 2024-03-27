@@ -1,9 +1,12 @@
-<img src="./assets/ObsidianSync.png"></img>
+![[ObsidianSync.png]]
 
-> This repo aims to propose an initialization folder to synchronize its Obsidian vault in GitHub.
+>[!info] This repo aims to propose an initialization folder to synchronize its Obsidian vault in GitHub.
 
-
-# Installation
+# Table of Contents
+- [Installation](#installation)
+- [Synchronization](#synchronization)
+___
+## Installation
 
 1. Download Obsidian packages.
 2. Download Git projet before runnning Obsidian.
@@ -14,9 +17,7 @@
 4. Click open and select the Git repository you just downloaded :
 <img src="./assets/gifs/ObsidianSync.gif">
 > You can remove **assets folder** ands **REAMDE file** for clean installation
-
-
-# Synchronization
+## Synchronization
 
 Create some notes in your new environment.
 Before create the new repository, you just need to run the script ``.obsidiansync`` to sync your Obsidian in your new repository.
@@ -28,7 +29,8 @@ git branch -M master
 git push -u origin master
 ```
 
-In this example, I show you how to synchronize your Obsidian with Git using the script  
+In this example, I show you how to synchronize your Obsidian with Git using the script :
+
 <img src="./assets/gifs/ObsidianSyncSH.gif">
 --- 
 <div align="center">
