@@ -10,17 +10,14 @@ print_banner() {
 print_check() {
     echo ""
     echo "👌🏽$1"
-    echo "_____________________________________________________________"
 }
 print_success() {
     echo ""
     echo "✅$1"
-    echo "_____________________________________________________________"
 }
 print_error() {
     echo ""
     echo "❌$1"
-    echo "_____________________________________________________________"
     exit 1
 }
 
@@ -29,10 +26,13 @@ print_banner
 
 # Change to the Obsidian Vault directory
 cd . || print_error "Failed to navigate to the Obsidian Vault directory."
+echo "_____________________________________________________________"
 
 # Add all changes to git
 print_check "Adding changes to git."
+echo "_____________________________________________________________"
 git add . || print_error "Failed to add changes to git."
+echo "_____________________________________________________________"
 
 # Commit the changes
 print_check "Committing changes."
