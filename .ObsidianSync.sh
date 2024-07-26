@@ -7,39 +7,41 @@ print_banner() {
     echo "#     🏁 Obsidian synchronization script started. 🏁     #"
     echo "#########################################################"
 }
-
+print_check() {
+    echo ""
+    echo "👌🏽 $1"
+}
 print_success() {
     echo ""
-    echo "$1 👌🏽"
-    echo "#################################"
+    echo "✅ $1"
 }
-
 print_error() {
     echo ""
-    echo "Error: $1 ❌"
+    echo "❌ $1"
     exit 1
 }
 
-# Add changes to the Git index
-git add .
-if [ $? -ne 0 ]; then
-  print_error -e "❌ ERROR: Unable to add files."
-  exit 1
-fi
+# Start the script
+print_banner
+
+# Change to the Obsidian Vault directory
+cd . || print_error "Failed to navigate to the Obsidian Vault directory."
+
+# Add all changes to git
+print_check "Adding changes to git."
+git add . || print_error "Failed to add changes to git."
 
 # Commit the changes
-echo ""
-git commit -m "Automatically ObsidianBrain synchronization. 🔁"
-if [ $? -ne 0 ]; then
-  echo -e "❌ ERROR: Unable to commit changes. Make sure there are changes to commit."
-  exit 1
-fi
+print_check "Committing changes."
+git commit -m "Update vault" || print_error "Failed to commit changes."
+
+# Pull the latest changes from the remote repository
+print_check "Pulling latest changes from the remote repository."
+git pull origin main --rebase || print_error "Failed to pull changes from the remote repository."
 
 # Push the changes to the remote repository
-git push
-if [ $? -ne 0 ]; then
-  echo -e "❌ ERROR: Unable to push changes to the remote repository."
-  exit 1
-fi
+print_check "Pushing changes to the remote repository."
+git push origin main || print_error "Failed to push changes to the remote repository."
 
-echo -e "✅ Synchronization with GitHub completed successfully."
+# Script completed successfully
+print_success "Obsidian Vault synchronized successfully!"
