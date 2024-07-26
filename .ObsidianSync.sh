@@ -1,9 +1,29 @@
 #!/bin/bash
 
+# Functions for output
+print_banner() {
+    echo ""
+    echo "#########################################################"
+    echo "#     🏁 Obsidian synchronization script started. 🏁     #"
+    echo "#########################################################"
+}
+
+print_success() {
+    echo ""
+    echo "$1 👌🏽"
+    echo "#################################"
+}
+
+print_error() {
+    echo ""
+    echo "Error: $1 ❌"
+    exit 1
+}
+
 # Add changes to the Git index
 git add .
 if [ $? -ne 0 ]; then
-  echo -e "❌ ERROR: Unable to add files."
+  print_error -e "❌ ERROR: Unable to add files."
   exit 1
 fi
 
