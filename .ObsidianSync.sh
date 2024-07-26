@@ -1,29 +1,51 @@
 #!/bin/sh
 
 # Variables
-VAULT_DIR="."
-REPO_URL="git@github.com:shinydisk/ObsidianSync.git"
 COMMIT_MESSAGE="Automatically ObsidianBrain synchronization. 🔁"
 
+# Functions for output
+print_banner() {
+    echo ""
+    echo "#########################################################"
+    echo "#     🏁 Obsidian synchronization script started. 🏁     #"
+    echo "#########################################################"
+}
+
+print_success() {
+    echo ""
+    echo "$1 👌🏽"
+    echo "#################################"
+}
+
+print_error() {
+    echo ""
+    echo "Error: $1 ❌"
+    echo "#################################"
+    exit 1
+}
+
+# Banner
+print_banner
+
 # Script
-git add .
-echo ""
-echo "--------------------------------------------------------------------"
 
-if git diff-index --quiet HEAD --; then
-    echo ""
-    echo "No changes to synchronize. 🙅🏽‍♂️"
-    echo "--------------------------------------------------------------------"
-    echo ""
+## Add files
+if git add .; then
+    print_success "Files added successfully."
 else
+    print_error "Failed to add files."
+fi
 
-    git commit -m "$COMMIT_MESSAGE"
+## Commit message
+if git commit -m "$COMMIT_MESSAGE"; then
+    print_success "The commit message has been successfully entered."
+else
+    print_error "Failed to commit."
+fi
 
-    git push origin main
-
-    echo ""
-    echo ""
-    echo "Automatically Obsidian synchronization is done. ✅"
-    echo "--------------------------------------------------------------------"
-    echo ""
+## Push repository
+if git push; then
+    print_success "It's ok. ✅"
+else
+    print_error "Failed to push the repository."
 fi
