@@ -30,9 +30,7 @@ echo "_____________________________________________________________"
 
 # Add all changes to git
 print_check "Adding changes to git."
-echo "_____________________________________________________________"
 git add . || print_error "Failed to add changes to git."
-echo "_____________________________________________________________"
 
 # Commit the changes
 print_check "Committing changes."
