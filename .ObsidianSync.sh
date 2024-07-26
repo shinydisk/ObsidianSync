@@ -14,6 +14,7 @@ print_banner() {
 print_success() {
     echo ""
     echo "$1 👌🏽"
+    echo "----------------------------------------------------"
 }
 
 print_error() {
