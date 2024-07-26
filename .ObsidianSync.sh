@@ -14,13 +14,12 @@ print_banner() {
 print_success() {
     echo ""
     echo "$1 👌🏽"
-    echo "#################################"
 }
 
 print_error() {
     echo ""
     echo "Error: $1 ❌"
-    echo "#################################"
+    echo ""
     exit 1
 }
 
