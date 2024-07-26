@@ -11,6 +11,7 @@ print_banner() {
 print_check() {
     echo "$1"
     echo "----------------------------------------------------------"
+    echo ""
 }
 print_success() {
     echo "$1"
@@ -19,6 +20,7 @@ print_success() {
 print_error() {
     echo "$1"
     echo "----------------------------------------------------------"
+    echo ""
     exit 1
 }
 
