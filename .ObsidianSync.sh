@@ -9,7 +9,6 @@ COMMIT_MESSAGE="Automatically ObsidianBrain synchronization. 🔁"
 git add .
 echo ""
 echo "--------------------------------------------------------------------"
-echo ""
 
 if git diff-index --quiet HEAD --; then
     echo ""
