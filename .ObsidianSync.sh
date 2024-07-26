@@ -22,6 +22,7 @@ else
     git push origin main
 
     echo ""
+    echo ""
     echo "Automatically Obsidian synchronization is done. ✅"
     echo "--------------------------------------------------------------------"
     echo ""
