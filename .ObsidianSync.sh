@@ -7,6 +7,7 @@ COMMIT_MESSAGE="Automatically ObsidianBrain synchronization. 🔁"
 
 # Script
 git add .
+echo ""
 echo "--------------------------------------------------------------------"
 echo ""
 
