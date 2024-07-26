@@ -6,10 +6,6 @@ REPO_URL="git@github.com:shinydisk/ObsidianSync.git"
 COMMIT_MESSAGE="Automatically ObsidianBrain synchronization. 🔁"
 
 # Script
-cd "$VAULT_DIR" || { echo "The directory $VAULT_DIR does not exist. ❌"; exit 1; }
-echo "--------------------------------------------------------------------"
-echo ""
-
 git add .
 echo "--------------------------------------------------------------------"
 echo ""
