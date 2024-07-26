@@ -12,7 +12,6 @@ print_check() {
     echo ""
     echo "$1"
     echo "----------------------------------------------------------"
-    echo ""
 }
 print_success() {
     echo ""
