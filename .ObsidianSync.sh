@@ -9,13 +9,15 @@ print_banner() {
     echo ""
 }
 print_check() {
+    echo ""
     echo "$1"
     echo "----------------------------------------------------------"
     echo ""
 }
 print_success() {
-    echo "$1"
-    echo ""
+    echo "##############"
+    echo "#     $1     #"
+    echo "##############"
 }
 print_error() {
     echo "$1"
