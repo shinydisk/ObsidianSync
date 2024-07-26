@@ -1,51 +1,24 @@
-#!/bin/sh
+#!/bin/bash
 
-# Variables
-COMMIT_MESSAGE="Automatically ObsidianBrain synchronization. 🔁"
-
-# Functions for output
-print_banner() {
-    echo ""
-    echo "##########################################################"
-    echo "#     🏁 Obsidian synchronization script started. 🏁     #"
-    echo "##########################################################"
-}
-
-print_success() {
-    echo ""
-    echo "$1"
-    echo "----------------------------------------------------"
-}
-
-print_error() {
-    echo ""
-    echo "Error: $1 ❌"
-    echo ""
-    exit 1
-}
-
-# Banner
-print_banner
-
-# Script
-
-## Add files
-if git add .; then
-    print_success "Files added successfully."
-else
-    print_error "Failed to add files."
+# Add changes to the Git index
+git add .
+if [ $? -ne 0 ]; then
+  echo -e "❌ \e[31mError: Unable to add files.\e[0m"
+  exit 1
 fi
 
-## Commit message
-if git commit -m "$COMMIT_MESSAGE"; then
-    print_success "The commit message has been successfully entered."
-else
-    print_error "Failed to commit."
+# Commit the changes
+git commit -m "Automatically ObsidianBrain synchronization."
+if [ $? -ne 0 ]; then
+  echo -e "❌ \e[31mError: Unable to commit changes. Make sure there are changes to commit.\e[0m"
+  exit 1
 fi
 
-## Push repository
-if git push; then
-    print_success "It's ok. ✅"
-else
-    print_error "Failed to push the repository."
+# Push the changes to the remote repository
+git push
+if [ $? -ne 0 ]; then
+  echo -e "❌ \e[31mError: Unable to push changes to the remote repository.\e[0m"
+  exit 1
 fi
+
+echo -e "✅ \e[32mSynchronization with GitHub completed successfully.\e[0m"
