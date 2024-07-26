@@ -9,15 +9,15 @@ print_banner() {
 }
 print_check() {
     echo ""
-    echo "👌🏽 $1"
+    echo "👌🏽$1"
 }
 print_success() {
     echo ""
-    echo "✅ $1"
+    echo "✅$1"
 }
 print_error() {
     echo ""
-    echo "❌ $1"
+    echo "❌$1"
     exit 1
 }
 
