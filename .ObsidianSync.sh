@@ -26,7 +26,6 @@ print_banner
 
 # Change to the Obsidian Vault directory
 cd . || print_error "Failed to navigate to the Obsidian Vault directory."
-echo "_____________________________________________________________"
 
 # Add all changes to git
 print_check "Adding changes to git."
