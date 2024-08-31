@@ -4,7 +4,7 @@
 print_banner() {
     echo ""
     echo "####################################################################"
-    echo "#          🏁 Obsidian synchronization script started. 🏁          #"
+    echo "#          🏁 Obsidian Synchronization Script started. 🏁          #"
     echo "####################################################################"
 }
 print_check() {
