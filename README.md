@@ -10,14 +10,14 @@ This repo aims to propose an initialization folder to synchronize its Obsidian v
 
 ## Installation
 
-1. Download Obsidian packages.
-2. Download Git projet before runnning Obsidian.
+1. Download [Obsidian packages](https://obsidian.md/download).
+2. Download Git project before runnning Obsidian.
     ```bash
     git clone https://github.com/shinydisk/ObsidianSync.git
     ```
 3. Install & open Obsidian.
-4. Click open and select the Git repository you just downloaded :
-Coming soon !
+4. Click on "**Open folder as vault**" and select the Git project you just cloned.
+
 > You can remove **assets folder** ands edit **REAMDE file** for clean installation
 ## Synchronization
 
@@ -34,7 +34,7 @@ git push -u origin master
 In this example, I show you how to synchronize your Obsidian with Git using the script :
 
 <img src="">
-Coming soon !<br>
+<br>
 ---
 <div align="center">
   MIT licensed | Copyright © 2024 Shinydisk, https://abkr.fr
